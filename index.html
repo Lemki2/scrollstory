@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parallax Narrative</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background-color: #000;
+            font-family: Arial, sans-serif;
+        }
+        .section {
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .parallax {
+            height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* Add specific styles for each parallax background */
+        #parallax-1 { background-image: url('image1.png'); }
+        #parallax-2 { background-image: url('image2.png'); }
+        #parallax-3 { background-image: url('image3.png'); }
+        #parallax-4 { background-image: url('image4.png'); }
+        #parallax-5 { background-image: url('image5.png'); }
+    </style>
+</head>
+<body>
+
+    <!-- Parallax Section 1 -->
+    <div id="parallax-1" class="parallax"></div>
+
+    <!-- Text Section 1 -->
+    <div class="section">
+        <p>Meet the Little Girl named Mica. She is happy for now.</p>
+    </div>
+
+    <!-- Parallax Section 2 -->
+    <div id="parallax-2" class="parallax"></div>
+
+    <!-- Text Section 2 -->
+    <div class="section">
+        <p>After a long happy time, now that she is 6 years old she is most of the time scared. BUT Her fears date back in Mica's years as a baby. She was not taken care of. She cried.</p>
+    </div>
+
+    <!-- Parallax Section 3 -->
+    <div id="parallax-3" class="parallax"></div>
+
+    <!-- Text Section 3 -->
+    <div class="section">
+        <p>After she got to meet her young self now, now as someone a little older, she realized the baby was still there, buried in her psyche. Now a spark of light comes into her heart and she feels like caring for the little baby.</p>
+    </div>
+
+    <!-- Parallax Section 4 -->
+    <div id="parallax-4" class="parallax"></div>
+
+    <!-- Text Section 4 -->
+    <div class="section">
+        <p>Having seen the baby and given love to her, Mica goes on to embrace little more love and less fear in her life. So, the fears and pains are for us to recognize, listen to, and care for. SO, THE FEARS AND PAINS ARE FOR US TO RECOGNIZE, LISTEN TO, AND CARE FOR.  (This story is inspired by IFS Therapy!)
+
+
+
+
+
+
+        </p>
+    </div>
+
+        <!-- Parallax Section 4 -->
+        <div id="parallax-5" class="parallax"></div>
+
+    <!-- Parallax.js library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="./parallax.js"></script>
+    <script>
+        // Initialize Parallax.js for each parallax section
+        // Adjust settings as needed
+        new Parallax(document.getElementById('parallax-1'));
+        new Parallax(document.getElementById('parallax-2'));
+        new Parallax(document.getElementById('parallax-3'));
+        new Parallax(document.getElementById('parallax-4'));
+    </script>
+
+</body>
+</html>
